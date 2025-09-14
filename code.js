@@ -6,6 +6,7 @@
     let Timer;
     let mode;
     let name;
+    let temp = 0;
     
     const Player = document.getElementById("Player");
     const Enemy = document.getElementById("Enemy");
@@ -24,8 +25,9 @@
     Buttons = document.querySelectorAll(".buttons")
     Buttons.forEach(e => {
         e.addEventListener("click", () => {
-            if (document.getElementById('name').value) {
-                name = document.getElementById('name').value;
+            if (temp == 0) {
+               name = document.getElementById('name').value;
+               temp = 1;
             }
             Timer = Date.now();
             if (e.innerText == "Easy") {
@@ -316,4 +318,5 @@
         Player.style.left = newX + "px";
 
     })
+
 
