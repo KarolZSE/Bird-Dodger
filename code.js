@@ -18,7 +18,7 @@
     function GameStart() {
         TileBack.style.display = "inline";
         TextTile.style.display = "inline"; 
-        TextTile.innerHTML = `<br><br> Pilot <input id='name' type='text' placeholder='Your name'> ! You've got to save us! We've just flown into a flock of birds! Please maneuver us around them I will try to help you I'll by calling out their positions, steer us to safety, before it's too late! Please choose the dificulty you want to continue with:`;
+        TextTile.innerHTML = `<br><br><br> Pilot <input id='name' type='text' placeholder='Your name'> ! You've got to save us! We've just flown into a flock of birds! Please maneuver us around them I will try to help you I'll by calling out their positions, steer us to safety, before it's too late! Please choose the dificulty you want to continue with:`;
     }
 
     Buttons = document.querySelectorAll(".buttons")
@@ -312,4 +312,5 @@
         let newX = event.clientX - Player.offsetWidth / 2;
         newX = Math.max(0, BG.offsetLeft + 35 + Math.min(BG.offsetWidth - 18 - Player.offsetWidth, newX));
         Player.style.left = newX + "px";
+
     })
