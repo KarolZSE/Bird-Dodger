@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="firebase.js" type="module"></script>
+<body>
+    <img id="note" src="NOTE.png" width="333" height="500"></img><div id="ImgText">Important to Remember: <br> Blue Bird goes straight <br> Red Bird goes in zig zags <br> Yellow bird returns back <br> Green bird is super fast<br><br> You can move the ballon <br>along the X-axis with the <br>mouse. You can press <br>the spacebar to make the <br>ballon float upward (be <br>careful, it takes time to<br> fall back down)</div>
+    <div id="Parent">
+        <div id="back"></div>
+    </div>
+    <img id="Player" src="Ballon.png" />
+    <img id="Enemy" src="caution.png" height="20" width="20" />
+    <img id="Tile" src="Tile.png" height="500" width="500" /><div id="TextTile" style="width: 400px;"></div>
+        <button class="buttons" id="easy">Easy</button>
+        <button class="buttons" style="left: 50.5%;">Medium</button>
+        <button class="buttons" style="left: 60.5%;">Hard</button>
+<aside>
+  <span id="con">Author of: <br> Menu and button texture's - Yumeji <br> Clouds - Freepik</span>
+  <div id="parental-leaderboard">
+    <div id="leaderboard">
+      <div id="leaderboard-content">
+        <h2>Leaderboard</h2>
+
+        <!-- Header row -->
+        <div class="leaderboard-row header">
+          <span>Username</span>
+          <span>Lived (sec)</span>
+          <span>Game mode</span>
+        </div>
+
+        <!-- JS will insert rows here -->
+        <ol id="leaderboard-list"></ol>
+      </div>
+    </div>
+  </div>
+</aside>
+</body>
+<script src="code.js"></script>
+</html>
