@@ -24,7 +24,9 @@
     Buttons = document.querySelectorAll(".buttons")
     Buttons.forEach(e => {
         e.addEventListener("click", () => {
-            name = document.getElementById('name').value;
+            if (document.getElementById('name').value) {
+                name = document.getElementById('name').value;
+            }
             Timer = Date.now();
             if (e.innerText == "Easy") {
                 mode = "Easy";
@@ -314,3 +316,4 @@
         Player.style.left = newX + "px";
 
     })
+
